@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(ProductRouter);
 
 let Port;
-process.env.Status==="production"?(Port=process.env.PROD_PORT):(Port=process.env.DEV_PORT);
+process.env.Status==="production"?(Port=process.env.PROD_PORT):(Port=process.env.PROD_PORT);
 var server = app.listen(Port, function () {  
   
   console.log('server started', process.env.Status, Port);  
