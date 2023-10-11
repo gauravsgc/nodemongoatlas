@@ -3,8 +3,9 @@ const mongoose = require('mongoose');
 let ProductSchema = new mongoose.Schema({
     username:{
         type:String,
+       
         required:[true,'name is required'],
-        unique:true
+       
     },
     userpass:{
         type:String,

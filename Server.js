@@ -1,5 +1,8 @@
-var express = require('express');  
+var express = require('express'); 
+var cors = require('cors') 
 var app = express(); 
+app.use(cors())
+app.options('*', cors())
 require('dotenv').config() 
 require('./database/connection');
 const Product= require("./Models/Product")
